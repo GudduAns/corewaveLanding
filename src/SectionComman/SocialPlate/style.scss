@@ -1,0 +1,60 @@
+.social-plate-wrap {
+    position: absolute;
+    top: 50%;
+    left: 23px;
+    rotate: -90deg;
+    transform-origin: 0% 0%;
+    transform: translate(-50%, 0%);
+
+    @media (max-width:991px) {
+        left: 7px;
+    }
+
+    .social-wrap {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+
+            .icon {
+                -webkit-mask-image: url('../../assets/icons/ant-design_instagram-outlined.svg');
+                mask-image: url('../../assets/icons/ant-design_instagram-outlined.svg');
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                display: block;
+                background: rgba(255, 255, 255, 1);
+                height: 15px;
+                width: 15px;
+                rotate: 90deg;
+
+                &.fb {
+                    -webkit-mask-image: url('../../assets/icons/simple-icons_facebook.svg');
+                    mask-image: url('../../assets/icons/simple-icons_facebook.svg');
+                }
+
+                &.twitter {
+                    -webkit-mask-image: url('../../assets/icons/teenyicons_twitter-outline.svg');
+                    mask-image: url('../../assets/icons/teenyicons_twitter-outline.svg');
+                }
+
+                &.dribble {
+                    -webkit-mask-image: url('../../assets/icons/icon-park-outline_dribble.svg');
+                    mask-image: url('../../assets/icons/icon-park-outline_dribble.svg');
+                }
+            }
+
+            .social-name {
+                color: #FFF;
+                font-family: 'Poppins', sans-serif;
+                font-size: 12.06px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+    }
+}

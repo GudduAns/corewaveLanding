@@ -1,0 +1,152 @@
+.section1-wrapper {
+    background: #222;
+    overflow: hidden;
+    position: relative;
+
+    .section1-wrap {
+        padding: 172px 96px 76px 96px;
+        position: relative;
+        z-index: 2;
+
+        @media (max-width:991px) {
+            padding: 172px 36px 76px 36px;
+        }
+
+        .hero-text-wrap {
+            .title {
+                color: #FFF;
+                font-family: 'poppins', sans-serif;
+                font-size: 73px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 81.7px;
+                position: relative;
+                z-index: 1;
+
+                @media (max-width:767px) {
+                    font-size: 36px;
+                    line-height: normal;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    border-radius: 322px;
+                    max-width: 322px;
+                    max-height: 322px;
+                    height: 50vh;
+                    width: 50vw;
+                    top: 0;
+                    left: 50%;
+                    background: rgba(19, 65, 236, 0.40);
+                    filter: blur(119.13999938964844px);
+                    z-index: -1;
+                }
+            }
+
+            .description {
+                color: #FFF;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14.222px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 18.667px;
+                margin-top: 18px;
+                max-width: 418px;
+            }
+        }
+
+        .redElem-wrap {
+            position: absolute;
+            top: 115px;
+            right: 0;
+        }
+
+        .btn-wrap {
+            button {
+                color: rgba(255, 255, 255, 0.85);
+                text-align: center;
+                text-shadow: 0.6404494047164917px 0.6404494047164917px 0.6404494047164917px rgba(0, 0, 0, 0.25);
+                font-family: 'Rubik', sans-serif;
+                font-size: 23.056px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border-radius: 13.01px;
+                background: radial-gradient(76.16% 76.16% at 31.97% 19.67%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.00) 69.79%, rgba(255, 255, 255, 0.00) 100%), #1341EC;
+                box-shadow: 2.5618px 24.33708px 39.70786px 0px rgba(0, 0, 0, 0.50);
+                padding: 14px 58px;
+                margin: 27px auto 44px auto;
+                display: block;
+
+                @media (max-width:575px) {
+                    padding: 14px 38px;
+                }
+            }
+        }
+
+        .add-slider {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                border-radius: 322px;
+                max-width: 322px;
+                max-height: 322px;
+                height: 50vh;
+                width: 50vw;
+                transform: translateY(-50%);
+                background: rgba(19, 65, 236, 0.40);
+                filter: blur(119.13999938964844px);
+                z-index: -1;
+            }
+        }
+
+        .donut-wrap {
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            z-index: -1;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .pipe-wrap {
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+            z-index: -1;
+
+            @media (max-width:767px) {
+                right: -16px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                border-radius: 322px;
+                max-width: 322px;
+                max-height: 322px;
+                height: 50vh;
+                width: 50vw;
+                right: 0;
+                transform: translateY(-50%);
+                background: rgba(154, 19, 236, 0.40);
+                filter: blur(119.13999938964844px);
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+
+                @media (max-width:767px) {
+                    height: 160px;
+                }
+            }
+        }
+    }
+}

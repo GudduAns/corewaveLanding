@@ -1,0 +1,154 @@
+.section2-main-wrapper {
+    background: #222;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 0;
+
+    .section2-wrap {
+        padding: 102px 39px 21px 39px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            border-radius: 322px;
+            max-width: 322px;
+            max-height: 322px;
+            height: 80vh;
+            width: 50vw;
+            bottom: 0;
+            left: 10%;
+            background: rgba(62, 33, 149, 0.40);
+            filter: blur(119.13999938964844px);
+            z-index: -1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-radius: 322px;
+            max-width: 322px;
+            max-height: 322px;
+            height: 80vh;
+            width: 50vw;
+            bottom: 0;
+            right: 0;
+            background: rgba(154, 19, 236, 0.40);
+            filter: blur(119.13999938964844px);
+            z-index: -1;
+        }
+
+        .heading-wrapper {
+            .subtitle {
+                color: #FFF;
+                font-family: 'Poppins', sans-serif;
+                font-size: 29.22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18.667px;
+                text-align: center;
+                margin-bottom: 29px;
+
+                @media (max-width:576px) {
+                    font-size: 16px;
+                }
+            }
+
+            .heading {
+                color: #FFF;
+                text-align: center;
+                font-family: "Poppins", sans-serif;
+                font-size: 73px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 81.7px;
+                position: relative;
+
+                @media (max-width:767px) {
+                    font-size: 36px;
+                    line-height: normal;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    border-radius: 322px;
+                    max-width: 322px;
+                    max-height: 322px;
+                    height: 80vh;
+                    width: 50vw;
+                    top: 0;
+                    left: 35%;
+                    background: rgba(62, 33, 149, 0.40);
+                    filter: blur(119.13999938964844px);
+                    z-index: -1;
+                }
+            }
+        }
+
+        .down-arrow-wrap {
+            height: 100px;
+            width: 100px;
+            background-color: #fff;
+            margin: 39px auto 146px auto;
+            border-radius: 50%;
+            position: relative;
+
+            @media (max-width:576px) {
+                height: 80px;
+                width: 80px;
+                margin: 39px auto 90px auto;
+            }
+
+            &::after {
+                content: url('../../assets/icons/arrowDown.svg');
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+            }
+
+        }
+
+        .counter-wrap {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 85px;
+            align-items: center;
+            justify-content: center;
+
+            .count-box {
+                position: relative;
+
+                .count {
+                    color: rgba(255, 255, 255, 0.20);
+                    text-align: center;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 189.957px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 212.596px;
+                }
+
+                span {
+                    color: #FFF;
+                    text-align: center;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 33.948px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 37.993px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+
+
+    }
+}
